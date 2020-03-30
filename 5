@@ -1,0 +1,21 @@
+let arr;
+    function samArray(){
+  arr=[];
+while(true){
+  let number=+prompt("Enter number");
+  if(number===""||number===null||!isFinite(number)){
+    break;
+  }
+  arr.push(number);
+} 
+  return arr;
+}
+console.log(samArray());
+
+let arr1;
+arr1=[];
+for(let i=0;i<arr.length;i++){
+  if(arr1.indexOf(arr[i])==-1){
+    arr1.push(arr[i]);
+  }
+} console.log(arr1);
